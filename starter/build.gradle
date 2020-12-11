@@ -4,8 +4,8 @@ buildscript {
     ext{
         kotlin_version = '1.4.21'
         nav_version = '2.3.2'
-        data_binding_version = '4.1.1'
-        lifecycle_version = '2.2.0'
+//        data_binding_version = '4.1.1'
+//        lifecycle_version = '2.2.0'
     }
 
     repositories {

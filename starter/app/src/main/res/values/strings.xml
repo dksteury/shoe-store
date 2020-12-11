@@ -7,4 +7,9 @@
     <string name="login_button_text">log in</string>
     <string name="create_account_button_text">create account</string>
     <string name="account_login_text">Account Login</string>
+    <string name="welcome_title">Welcome</string>
+    <string name="welcome_text">Welcome to the Shoe Store Inventory App!</string>
+    <string name="instructions_button_text">Instructions</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
