@@ -9,14 +9,34 @@
         android:id="@+id/instruction_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center_horizontal"
+        android:gravity="center"
         android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/instruction_text"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        <TextView
+            android:id="@+id/instruction_title_text"
+            style="@style/TitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:text="@string/instruction_title"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/instruction_text"
+            style="@style/NameStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:text="@string/instruction_text"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/shoe_list_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:text="@string/shoe_list_button_text" />
 
     </LinearLayout>
 </layout>

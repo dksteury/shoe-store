@@ -4,12 +4,17 @@
     <string name="email_hint">email@example.com</string>
     <string name="password_text">Password:</string>
     <string name="password_hint">password</string>
-    <string name="login_button_text">log in</string>
-    <string name="create_account_button_text">create account</string>
+    <string name="login_button_text">Log In</string>
+    <string name="create_account_button_text">Create Account</string>
     <string name="account_login_text">Account Login</string>
     <string name="welcome_title">Welcome</string>
     <string name="welcome_text">Welcome to the Shoe Store Inventory App!</string>
     <string name="instructions_button_text">Instructions</string>
+    <string name="instruction_title">Instructions</string>
+    <string name="instruction_text">Placeholder - not sure what to put here yet</string>
+    <string name="shoe_list_button_text">Shoe List</string>
+    <string name="shoe_text">Ascics</string>
+    <string name="add_shoe">Add Shoe</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
