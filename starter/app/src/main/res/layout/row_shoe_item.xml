@@ -20,7 +20,9 @@
             style="@style/NameStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin"
             android:layout_weight="1"
+            android:padding="@dimen/small_padding"
             android:text="@{shoe.name}"
             tools:text="Keyano" />
 
@@ -29,18 +31,22 @@
             style="@style/NameStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin"
             android:layout_weight="1"
+            android:padding="@dimen/small_padding"
             android:text="@{Double.toString(shoe.size)}"
-            tools:text="11.0"/>
+            tools:text="11.0" />
 
         <TextView
             android:id="@+id/company_text"
             style="@style/NameStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin"
             android:layout_weight="1"
+            android:padding="@dimen/small_padding"
             android:text="@{shoe.company}"
-            tools:text= "Asics"/>
+            tools:text="Asics" />
 
         <TextView
             android:id="@+id/description_text"
@@ -48,8 +54,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:padding="@dimen/small_padding"
             android:text="@{shoe.description}"
-            tools:text="Running shoe"/>
+            tools:text="Running shoe" />
 
     </LinearLayout>
 </layout>
