@@ -4,4 +4,8 @@
     <dimen name="text_size">18sp</dimen>
     <dimen name="layout_margin">16dp</dimen>
     <dimen name="title_text_size">24sp</dimen>
+    <dimen name="name_weight">2</dimen>
+    <dimen name="size_weight">1</dimen>
+    <dimen name="company_weight">2</dimen>
+    <dimen name="description_weight">7</dimen>
 </resources>

@@ -11,16 +11,29 @@
     <string name="welcome_text">Welcome to the Shoe Store Inventory App!</string>
     <string name="instructions_button_text">Instructions</string>
     <string name="instruction_title">Instructions</string>
-    <string name="instruction_text">Placeholder - not sure what to put here yet</string>
+    <string name="instruction_text">Click button to see shoe list.\n\nThen, click \'+\' button to add shoes to the list.</string>
     <string name="shoe_list_button_text">Shoe List</string>
     <string name="shoe_text">Ascics</string>
     <string name="add_shoe">Add Shoe</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="nav_login_label">Login</string>
     <string name="nav_welcome_label">Welcome</string>
     <string name="nav_instruction_label">Instructions</string>
     <string name="nav_showlist_label">Shoe List</string>
     <string name="nav_shoedetail_label">Shoe Detail</string>
     <string name="overflow_logout_title">Logout</string>
+    <string name="name_tools">Keyano</string>
+    <string name="size_tools">11.0</string>
+    <string name="company_tools">Asics</string>
+    <string name="description_tools">Running shoe</string>
+    <string name="shoe_detail_title_text">Shoe Detail</string>
+    <string name="shoe_name_text">Name:</string>
+    <string name="shoe_name_hint">Shoe Name</string>
+    <string name="shoe_size_text">Size:</string>
+    <string name="shoe_size_hint">Shoe Size (example 9.5)</string>
+    <string name="save_shoe_button_text">Save</string>
+    <string name="cancel_shoe_button_text">Cancel</string>
+    <string name="shoe_company_text">Company:</string>
+    <string name="shoe_company_hint">Shoe Company Name</string>
+    <string name="shoe_description_text">Description:</string>
+    <string name="shoe_description_hint">Shoe Description</string>
 </resources>
