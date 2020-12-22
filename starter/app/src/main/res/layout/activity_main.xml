@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!--Not sure why starter code had CoordinatorLayout-->
-<!--Used LinearLayout instead because simple views are arranged vertically-->
+<!-- Not sure why starter code had CoordinatorLayout, used LinearLayout instead because
+        it's less complex -->
 
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!-- ConstraintLayout was chosen so edit fields could be put next to their labels -->
-<!-- Could also have done this with nested LinearLayouts, but that would have been a pain -->
+<!-- ConstraintLayout was chosen so edit fields could be put next to their labels. Could also
+        have done this with nested LinearLayouts, but ConstraintLayout seemed easier -->
 
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -33,7 +33,7 @@
             style="@style/NameStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="@dimen/layout_margin"
             android:text="@string/email_text"
             app:layout_constraintBaseline_toBaselineOf="@+id/edit_text_email"
             app:layout_constraintStart_toStartOf="parent" />
@@ -59,7 +59,7 @@
             style="@style/NameStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="@dimen/layout_margin"
             android:text="@string/password_text"
             app:layout_constraintBaseline_toBaselineOf="@+id/edit_text_password"
             app:layout_constraintStart_toStartOf="parent" />

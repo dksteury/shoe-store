@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- LinearLayout was chosen because layout is simple with textviews oriented horizontally -->
+
 <layout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
@@ -7,6 +10,7 @@
         <variable
             name="shoe"
             type="com.udacity.shoestore.models.Shoe" />
+        <import type="com.udacity.shoestore.Converter" />
     </data>
 
     <LinearLayout
@@ -26,6 +30,9 @@
             android:text="@{shoe.name}"
             tools:text="@string/name_tools" />
 
+<!--        android:text="@{shoe.size}"-->
+
+
         <TextView
             android:id="@+id/size_text"
             style="@style/NameStyle"
@@ -34,7 +41,7 @@
             android:layout_marginTop="@dimen/layout_margin"
             android:layout_weight="@dimen/size_weight"
             android:padding="@dimen/small_padding"
-            android:text="@{Double.toString(shoe.size)}"
+            android:text="@{Converter.doubleToString(shoe.size)}"
             tools:text="@string/size_tools" />
 
         <TextView

@@ -3,8 +3,10 @@ package com.udacity.shoestore
 import android.app.Activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.activity.viewModels
 import androidx.appcompat.widget.Toolbar
 import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.NavHostFragment
@@ -29,7 +31,6 @@ class MainActivity : AppCompatActivity() {
         Timber.plant(Timber.DebugTree())
         val binding = DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
 
-// I don't think the next line is necessary
         setSupportActionBar(binding.toolbar)
 
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.navigation) as NavHostFragment
@@ -40,7 +41,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onSupportNavigateUp(): Boolean {
-//        val navController = this.findNavController(R.id.navigation)
         return NavigationUI.navigateUp(navController, appBarConfiguration)
                 || super.onSupportNavigateUp()
     }

@@ -16,20 +16,22 @@ import com.udacity.shoestore.databinding.RowShoeItemBinding
 
 class ShoeListFragment : Fragment() {
 
-    private val shoesViewModel: ShoeViewModel by activityViewModels()
+    private val shoeViewModel: ShoeViewModel by activityViewModels()
+    private lateinit var binding: FragmentShoeListBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val binding: FragmentShoeListBinding = DataBindingUtil.inflate(
+//        val binding: FragmentShoeListBinding = DataBindingUtil.inflate(
+        binding = DataBindingUtil.inflate(
             inflater, R.layout.fragment_shoe_list, container, false)
 
         binding.shoeDetailFab.setOnClickListener{
             findNavController().navigate(ShoeListFragmentDirections.actionShoeListFragmentToShoeDetailFragment())
         }
 
-        shoesViewModel.shoeList.observe(viewLifecycleOwner, { shoeList ->
+        shoeViewModel.shoeList.observe(viewLifecycleOwner, { shoeList ->
             shoeList.forEach { shoeItem ->
                 val shoeBinding: RowShoeItemBinding = DataBindingUtil.inflate(
                     inflater, R.layout.row_shoe_item, container, false)
@@ -40,6 +42,10 @@ class ShoeListFragment : Fragment() {
 
         setHasOptionsMenu(true)
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
